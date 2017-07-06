@@ -1,0 +1,21 @@
+<%
+    var thispage = {
+        pagename    : 'LANDING PAGE',
+        pagecss     : 'landingpage'
+    }
+%><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title><%= params.sitename %> - <%= thispage.pagename %></title>
+    
+<%- include('../tpl/head.ejs', { thispage:thispage }) %>
+</head>
+<body>
+<%- include('../tpl/header.ejs') %>
+    <main>
+    <%= thispage.pagename %>
+    </main>
+<%- include('../tpl/footer.ejs') %>
+</body>
+</html>
