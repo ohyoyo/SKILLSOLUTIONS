@@ -21,5 +21,9 @@ app.get('/', function(req, res) {
     res.render(__dirname+'/www/views/landingpage', {params:params});
 });
 
+app.get('/ressourceshumaines', function(req, res) {
+    res.render(__dirname+'/www/views/humanresources', {params:params});
+});
+
 // OPEN PORT
 app.listen(1337);
