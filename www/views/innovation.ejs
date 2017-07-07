@@ -1,0 +1,208 @@
+<%
+var thispage = {
+pagename    : 'Innovation',
+pagecss     : 'innovation'
+}
+%>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title><%= params.sitename %> - <%= thispage.pagename %></title>
+    <%- include('../tpl/head.ejs', { thispage:thispage }) %>
+</head>
+
+<body>
+    <%- include('../tpl/header.ejs') %>
+    <main>
+
+        <!--SECTION 1-->
+        <section>
+            <div class="particle-parent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div>
+                                <div>
+                                    <div id="play-button">
+                                        <a href="https://www.youtube.com/watch?v=oezVVhUIFq4" class="fa fa-play"><img src="assets/img/innovation/play-button.svg"></a>
+                                    </div>
+                                    <h1>Un dispositif engageant qui améliore les performances de vos employés !</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="particles-js">
+                    <canvas class="particles-js-canvas-el" width="2880" height="1500" style="width: 100%; height: 100%;">
+                    </canvas>
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION 2-->
+        <section>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-5 col-md-6">
+                            <img src="assets/img/innovation/background2.png">
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-5 col-md-6">
+                            <div">
+                            <div>
+                                <h1>Un problème ciblé, la solution existe : Ask for it !</h1>
+                            </div>
+                            <p>
+                                Ask for it est une fonctionnalité qui permet à tout collaborateur bloqué sur un sujet précis de solliciter l’aide communauté. Via une simple requête, tous les utilisateurs sont notifiés et peuvent intervenir s’il s’agit de leur domaine de compétence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION 3-->
+    <section>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 ">
+                        <h3>
+                            Besoin de LA solution pour former vos futures recrues de manière rapide et optimale ?
+                        </h3>
+                        <p>
+                            Ne cherchez plus, notre plateforme comprend des modules de formations complémentaires pertinents ou Learning management system, qui permettent à vos nouveaux employés d’acquérir rapidement les connaissances nécessaires à l’organisation et aux processus interne de vos entreprises et ainsi de les former efficacement dans une optique de productivité immédiate.
+                            Le plus ? Un module validé qui perdure dans le temps et qui servira à vos nouveaux professionnels entrants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION 4-->
+    <section>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 col-md-5 col-lg-5">
+                        <div>
+                            <h4>La gamification assure un engagement optimal sur la solution !</h1>
+                                <p>
+                                    Un dispositif de gratifications personnalisées selon votre secteur d’activité sous forme de coins et médailles. Les coins servent de monnaie pour une boutique spécialement conçue pour votre entreprise.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-md-5 col-lg-5">
+                            <img src="assets/img/innovation/background3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION 5-->
+        <section>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+            <div class="container">
+                <div class="frame">
+                <div class="nav">
+            </div>
+            <div ng-app ng-init="checked = false">
+                <form class="form-signin" action="" method="post" name="form">
+                  <label for="username">Nom</label>
+                  <input class="form-styling" type="text" name="username" placeholder=""/>
+                  <label for="password">Prénom</label>
+                  <input class="form-styling" type="text" name="password" placeholder=""/>
+                  <label for="password">Email</label>
+                  <input class="form-styling" type="text" name="password" placeholder=""/>
+                  <label for="password">Profession</label>
+                  <input class="form-styling" type="text" name="password" placeholder=""/>
+                  <input type="checkbox" id="checkbox"/>
+                  <div class="btn-animate">
+                    <a class="btn-signin">Sign in</a>
+                </div>
+            </form>
+
+            <form class="form-signup" action="" method="post" name="form">
+              <label for="fullname">Full name</label>
+              <input class="form-styling" type="text" name="fullname" placeholder=""/>
+              <label for="email">Email</label>
+              <input class="form-styling" type="text" name="email" placeholder=""/>
+              <label for="password">Password</label>
+              <input class="form-styling" type="text" name="password" placeholder=""/>
+              <label for="confirmpassword">Confirm password</label>
+              <input class="form-styling" type="text" name="confirmpassword" placeholder=""/>
+              <a ng-click="checked = !checked" class="btn-signup">Sign Up</a>
+          </form>
+
+          <div  class="success">
+              <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
+              <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
+              c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
+              c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
+              <div class="successtext">
+                 <p> Thanks for signing up! Check your email for confirmation.</p>
+             </div>
+         </div>
+     </div>
+
+    <div>
+        <div class="cover-photo"></div>
+        <div class="profile-photo"></div>
+        <h1 class="welcome">Welcome, Chris</h1>
+        <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+    </div>
+</div>
+
+</section>
+
+
+</main>
+<!--all JavaScript Files-->
+<%- include('../tpl/footer.ejs') %>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script type="text/javascript" src="../assets/js/innovation"></script>
+<script type="text/javascript" src="../assets/js/innovation/particles.min.js"></script>
+<script>
+    $(function() {
+        $(".btn").click(function() {
+            $(".form-signin").toggleClass("form-signin-left");
+        $(".form-signup").toggleClass("form-signup-left");
+        $(".frame").toggleClass("frame-long");
+        $(".signup-inactive").toggleClass("signup-active");
+        $(".signin-active").toggleClass("signin-inactive");
+        $(".forgot").toggleClass("forgot-left");   
+        $(this).removeClass("idle").addClass("active");
+        });
+    });
+
+    $(function() {
+        $(".btn-signup").click(function() {
+      $(".nav").toggleClass("nav-up");
+      $(".form-signup-left").toggleClass("form-signup-down");
+      $(".success").toggleClass("success-left"); 
+      $(".frame").toggleClass("frame-short");
+        });
+    });
+
+    $(function() {
+        $(".btn-signin").click(function() {
+      $(".btn-animate").toggleClass("btn-animate-grow");
+      $(".welcome").toggleClass("welcome-left");
+      $(".cover-photo").toggleClass("cover-photo-down");
+      $(".frame").toggleClass("frame-short");
+      $(".profile-photo").toggleClass("profile-photo-down");
+      $(".btn-goback").toggleClass("btn-goback-up");
+      $(".forgot").toggleClass("forgot-fade");
+        });
+    });
+</script>
+</body>
+
+</html>

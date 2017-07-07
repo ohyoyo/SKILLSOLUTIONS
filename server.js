@@ -1,6 +1,7 @@
 // REQUIRE AND EXECUTE MODULE EXPRESS
 const express = require('express');
 const app = express();
+const port = 1337;
 
 // REQUIRE AND EXECUTE MODULE EJS
 const ejs = require('ejs');
@@ -17,9 +18,15 @@ const params = {
 }
 
 // VIEWS
-app.get('/', function(req, res) {
+app.get('/landingpage', function(req, res) {
     res.render(__dirname+'/www/views/landingpage', {params:params});
 });
 
+app.get('/innovation', function(req, res) {
+    res.render(__dirname+'/www/views/innovation', {params:params});
+});
+
 // OPEN PORT
-app.listen(1337);
+app.listen(port, function(){
+	console.log('listening on port ' + port );
+});
