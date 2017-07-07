@@ -2,9 +2,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* HEADER */
+
 header {
     height: 70px;
     background-color: white;
+    border-bottom: solid #eee 1px;
 }
 
 .center-col {
@@ -117,7 +121,6 @@ header nav ul li a:hover {
 @media screen and (max-width:768px) {
     header {
         position: relative;
-        border-bottom: solid #eee 1px;
     }
     #burger {
         display: block;
@@ -146,5 +149,108 @@ header nav ul li a:hover {
     }
     header nav ul li a {
         min-height: 52px;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 70px 35px;
+    position: relative;
+    background-color: #000;
+    color: #bebebe;
+    font-size: 14px;
+    line-height: 23.1px;
+    padding: 70px 35px;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto !important;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4.5%;
+}
+
+footer small {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 80%;
+    text-align: center;
+    color: #747474;
+}
+
+footer .grid>div {
+    padding: 5px 15px;
+}
+
+footer.row {
+    margin-bottom: 0px
+}
+
+#scroll-top {
+    width: 40px;
+    height: 40px;
+    background-image: url("images/up.png");
+    background-size: 30px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: -30px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer .grid>div {
+    margin-bottom: 0 !important;
+    padding: 5px 15px !important;
+}
+
+.row1 div:first-child {
+    float: left;
+    width: 50%;
+}
+
+.row1 div:last-child {
+    float: right;
+    width: 50%;
+}
+
+.row2 {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+.row2 div:first-child {
+    width: 100%;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+@media screen and (max-width:480px) {
+    .row1 div:first-child {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    .row1 div:last-child {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        float: none
+    }
+    .row2 div:first-child {
+        margin-top: 20px;
+        padding: 0;
     }
 }

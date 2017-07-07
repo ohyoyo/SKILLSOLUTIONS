@@ -14,7 +14,83 @@
 <body>
 <%- include('../tpl/header.ejs') %>
     <main>
-<%= thispage.pagename %>
+        <section>
+           <div class="overlay">
+                <div class="center-col">
+                    <h1>Une solution novatrice trois en un qui vous permettra de gérer efficacement vos ressources humaines.</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <article class='center-col'>
+                <h2>VOS COLLABORATEURS SONT UNE MINE DE CONNAISSANCE QU’IL VOUS FAUT EXPLOITER...</h2>
+                <div>
+                    <p class="p-left">En encourageant vos collaborateurs à partager leurs connaissances, notre solution de Knowledge Management vous permet de capitaliser sur leurs compétences. Structurez, partagez les connaissances au sein de votre entreprise afin d’optimiser la productivité de vos effectifs.</p>
+                    <img src="/assets/img/mine_connaissance.png" alt="mine de connaissance" class="prod">
+                </div>
+            </article>
+            <article class='center-col'>
+                <h2>...Du knowledge management aux Learning Management Systems...</h2>
+                <div>
+                   <img src="/assets/img/learning.jpg" alt="" class="prod">
+                    <p>Le contenu partagé peut alors faire l’objet de modules de formation certifiantes au sein de l’entreprise pour valoriser les compétences et l’expertise de vos équipes. Ces modules sont également une ressource précieuse pour former de nouveaux collaborateurs.</p>
+                    
+                </div>
+            </article>
+            <article class='center-col'>
+                <h2>...EN PASSANT PAR LA GAMIFICATION...</h2>
+                <div>
+                    <p class="p-left">Pour inciter vos effectifs à utiliser notre plateforme, nous proposons un système de ranking. Agrémenté de médailles et de coin, il donne accès à des cadeaux dans une boutique spécialement conçue par l’entreprise.</p>
+                    <img src="/assets/img/gamification.jpg" alt=""class="prod">
+                </div>
+            </article>
+        </section>
+        <section id='reserver'>
+                <h2 class="title-section">CONTACT</h2>
+                <form action="/contact" method="post">
+                    <div class="lab-section">
+                        <div class="ord-lab">
+                            <input type="text" id="lastname" name="lastname" placeholder="Nom" required>
+                        </div>
+                        <div class="ord-lab">
+                            <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                        </div>
+                    </div>
+                    <div class="lab-section">
+                        <div class="ord-lab">
+                            <input type="email" id="email" name="email" required placeholder="email">
+                        </div>
+                        <div class="ord-lab">
+                            <input type="text" id="enterprise" name="enterprise" required placeholder="entreprise">
+                        </div>
+                    </div>
+                    <div class="lab-section">
+                        <div class="ord-lab">
+                            <input type="text" id="function" name="function" required placeholder="fonction">
+                        </div>
+                        <div class="ord-lab">
+                            <input type="text" id="business_sector" name="business_sector" required placeholder="secteur d'activité">
+                        </div>
+                    </div>
+                    <input type="submit" value="Réserver">
+                </form>
+            </section>
+<!--
+        <section>
+           <h2>CONTACT</h2>
+            <form action="" class="center-col">
+                <div>
+                    <input type="text" name="firstname">
+                    <input type="text" name="lastname">
+                </div>
+                <input type="email" name="email">
+                <input type="text" name="enterprise">
+                <input type="text" name="function">
+                <input type="text" name="business_sector">
+                <input type="submit">
+            </form>
+        </section>
+-->
     </main>
 <%- include('../tpl/footer.ejs') %>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
